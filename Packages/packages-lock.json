@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "jp.keijiro.unityspantest": {
+      "version": "file:jp.keijiro.unityspantest",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "org.nuget.system.buffers": {
       "version": "4.4.0",
       "depth": 1,
