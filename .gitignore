@@ -1,0 +1,13 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Unity
+/Library
+/Logs
+/Recordings
+/UserSettings
+/Temp

@@ -1,0 +1,12 @@
+{
+  "scopedRegistries": [
+    {
+      "name": "Unity NuGet",
+      "url": "https://unitynuget-registry.azurewebsites.net",
+      "scopes": [ "org.nuget" ]
+    }
+  ],
+  "dependencies": {
+    "org.nuget.system.memory": "4.5.3"
+  }
+}
