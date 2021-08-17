@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "jp.keijiro.unityspantest": {
-      "version": "file:jp.keijiro.unityspantest",
+      "version": "file:../../jp.keijiro.unityspantest",
       "depth": 0,
-      "source": "embedded",
+      "source": "local",
       "dependencies": {}
     },
     "org.nuget.system.buffers": {

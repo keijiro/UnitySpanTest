@@ -6,8 +6,8 @@ Desktop.ini
 .DS_Store
 
 # Unity
-/Library
-/Logs
-/Recordings
-/UserSettings
-/Temp
+/DotNetStandard2.?/Library
+/DotNetStandard2.?/Logs
+/DotNetStandard2.?/Recordings
+/DotNetStandard2.?/UserSettings
+/DotNetStandard2.?/Temp

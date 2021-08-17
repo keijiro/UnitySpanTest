@@ -7,6 +7,7 @@
     }
   ],
   "dependencies": {
-    "org.nuget.system.memory": "4.5.3"
+    "org.nuget.system.memory": "4.5.3",
+    "jp.keijiro.unityspantest": "file:../../jp.keijiro.unityspantest"
   }
 }
