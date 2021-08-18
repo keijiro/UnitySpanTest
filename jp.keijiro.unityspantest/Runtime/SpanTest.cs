@@ -8,8 +8,21 @@ public sealed class SpanTest : MonoBehaviour
         for (var i = 0; i < span.Length; i++) span[i] = i;
     }
 
+#if NET_STANDARD_2_0 || NET_STANDARD_2_1
+
     public static int ReadSpan(ReadOnlySpan<int> span)
       => span[span.Length - 1];
+
+#else
+
+    public static int ReadSpan(ReadOnlySpan<int> span)
+    {
+        var temp = (Span<int>)(stackalloc int[span.Length]);
+        span.CopyTo(temp);
+        return temp[temp.Length - 1];
+    }
+
+#endif
 
     void Start()
     {

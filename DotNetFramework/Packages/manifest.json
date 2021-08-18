@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "jp.keijiro.unityspantest": "file:../../jp.keijiro.unityspantest"
+  }
+}

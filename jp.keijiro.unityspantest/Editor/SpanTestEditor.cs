@@ -5,7 +5,12 @@ using UnityEditor;
 [CustomEditor(typeof(SpanTest))]
 sealed class SpanTestEditor : Editor
 {
-    #if UNITY_2021_2_OR_NEWER
+#if NET_STANDARD_2_0 || NET_STANDARD_2_1
+
+    public static int ReadSpan(ReadOnlySpan<int> span)
+      => span[0];
+
+#else
 
     public static int ReadSpan(ReadOnlySpan<int> span)
     {
@@ -14,12 +19,7 @@ sealed class SpanTestEditor : Editor
         return temp[0];
     }
 
-    #else
-
-    public static int ReadSpan(ReadOnlySpan<int> span)
-      => span[0];
-
-    #endif
+#endif
 
     public override void OnInspectorGUI()
     {
